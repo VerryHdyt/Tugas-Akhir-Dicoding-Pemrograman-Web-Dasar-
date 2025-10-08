@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!--header adalah bagian atas berisi identitas website dan navigasi -->
+    <header id="Home">
+        <section class="banner">
+            <h1>Coffee</h1>
+            <p>Selamat datang di website pengetahuan tentang kopi</p>
+        </section>
+
+        <!--navigation adalah  utama situs -->
+        <nav aria-label="Navigasi utama">
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#Coffee">Coffee</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- main adalah konten utama halaman website -->
+    <main>
+        <!-- section utama berisi kumpulan artikel tentang kopi yang ada pada website ini -->
+        <section id="content" aria-labelledby="judul-kopi">
+            <!-- artikel 1 tentang kopi americano -->
+            <article id="Coffee" class="card">
+                <header>
+                    <h3>Americano</h3>
+                </header>
+                <figure>
+                    <img src="image/americano-removebg-preview.png" alt="Americano" class="featured-image">
+                    <figcaption>Americano — campuran espresso dan air panas</figcaption>
+                </figure>
+                <p>Americano adalah minuman kopi yang dibuat dengan mencampurkan espresso dengan air panas. Minuman ini memiliki rasa yang lebih ringan dibandingkan dengan espresso murni, karena air panas mengurangi konsentrasi kopi. Americano biasanya disajikan dalam cangkir besar dan dapat dinikmati dengan tambahan gula atau susu sesuai selera.</p>
+            </article>
+
+            <!--artikel 2 tentang kopi espresso-->
+            <article class="card">
+                <header>
+                    <h3>Espresso</h3>
+                </header>
+                <figure>
+                    <img src="image/expreso-removebg-preview.png" alt="Espresso" class="featured-image">
+                    <figcaption>Espresso — dasar dari berbagai jenis minuman kopi</figcaption>
+                </figure>
+                <p>Espresso adalah metode penyeduhan kopi yang berasal dari Italia, di mana air panas dipaksa melalui bubuk kopi yang sangat halus dengan tekanan tinggi. Hasilnya adalah minuman kopi yang kuat, pekat, dan memiliki lapisan crema di atasnya. Espresso biasanya disajikan dalam porsi kecil dan menjadi dasar bagi banyak minuman kopi lainnya seperti cappuccino, latte, dan macchiato.</p>
+            </article>
+
+            <!-- artikel 3 tentang kopi latte -->
+            <article class="card">
+                <header>
+                    <h3>Latte</h3>
+                </header>
+                <figure>
+                    <img src="image/Latte_Macchiato_Recipe_for_Home_Baristas-removebg-preview.png" alt="Latte" class="featured-image">
+                    <figcaption>Latte — espresso dicampur dengan susu panas</figcaption>
+                </figure>
+                <p>Latte adalah minuman kopi yang terdiri dari satu atau lebih shot espresso yang dicampur dengan susu panas dan sedikit busa susu di atasnya. Rasio antara susu dan kopi dalam latte biasanya lebih tinggi dibandingkan dengan cappuccino, sehingga menghasilkan rasa yang lebih lembut dan creamy. Latte sering disajikan dalam gelas besar dan dapat dihias dengan seni latte (latte art) di permukaan busa susu.</p>
+            </article>
+        </section>
+
+        <!-- aside informasi tambahan -->
+        <aside>
+            <article class="profile card">
+                <header>
+                    <h2>Tentang Penulis</h2>
+                </header>
+                <section>
+                    <h3>Ferry Hidayat</h3>
+                    <p>Hai, nama saya Ferry Hidayat. Ini merupakan website pertama saya yang membahas berbagai jenis kopi.</p>
+                    <figure>
+                        <img src="image/Profile.png" alt="Foto Ferry Hidayat">
+                        <figcaption>Ferry Hidayat — web developer pemula</figcaption>
+                    </figure>
+                </section>
+
+                <!-- informasi tentang kontak -->
+                <section class="contact" id="Contact" aria-labelledby="judul-kontak">
+                    <h3 id="judul-kontak">Hubungi Saya</h3>
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/ferry-hidayat-456a72384/" target="_blank" class="fab fa-linkedin-in" aria-label="LinkedIn Ferry"></a></li>
+                        <li><a href="https://www.facebook.com/VERRYcode" target="_blank" class="fab fa-facebook" aria-label="Facebook Ferry"></a></li>
+                        <li><a href="#" class="fab fa-twitter" aria-label="Twitter Ferry"></a></li>
+                        <li><a href="#" class="fab fa-youtube" aria-label="YouTube Ferry"></a></li>
+                    </ul>
+                </section>
+            </article>
+        </aside>
+    </main>
+
+    <!-- footer bagian bawah halaman website -->
+    <footer>
+        <p>Tugas Akhir Membuat Website &#169; 2025, Dicoding</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+h2 {
+    color: black;
+}
+
+footer {
+    padding: 20px;
+    color: rgb(184, 182, 182);
+    background-color: #efdbc3;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    font-weight: bold;
+    color: white;
+}
+
+.profile header {
+    text-align: center;
+}
+
+.featured-image {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 10px;
+}
+
+.profile img {
+    max-height: 200px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+
+.banner {
+    font-size: 20px;
+    padding: 60px;
+    text-align: center;
+    background-color: #efdbc3;
+    color: black;
+}
+
+nav ul {
+    padding-inline: 4rem;
+    display: flex;
+    gap: 2rem;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav {
+    padding: 5px;
+    position: sticky;
+    top: 0;
+    background-color: #f1cb9c;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    gap: 1.5rem;
+}
+
+#content {
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+aside {
+    text-align: center;
+    flex: 1;
+}
+
+header {
+    display: inline;
+}
+
+.contact {
+    font-size: 20px;
+    text-align: center;
+}
+
+.contact li a {
+    text-decoration: none;
+    color: black;
+}
+
+.contact ul {
+    padding: 1px;
+    display: flex;
+}
+
+.contact ul li {
+    list-style: none;
+    padding: 5px 0;
+    margin: auto;
+}
+
+.contact ul li a:hover {
+    color: #f1cb9c;
+    font-weight: bold;
+    transition: 0.3s;
+    text-decoration: underline;
+}
+
+
+@media screen and (max-width: 1200px) {
+    main {
+        flex-flow: column nowrap;
+    }
+
+    main aside {
+        align-self: center;
+    }
+}
+
+/* Perangkat dengan lebar layar 768px dan di bawahnya */
+@media screen and (max-width: 768px) {
+    nav ul {
+        justify-content: center;
+    }
+
+    main aside {
+        align-self: stretch;
+    }
+}
